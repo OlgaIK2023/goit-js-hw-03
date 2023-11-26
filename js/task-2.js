@@ -6,14 +6,11 @@ function makeArray (firstArray,secondArray,maxLength) {
   if ((firstArray.length > maxLength)) {
     return firstArray.slice(firstArray.length-(firstArray.length-maxLength),maxLength);} 
   else if((firstArray.length + secondArray.length) > maxLength) {
-    
-    
     return consatenatedArrays.slice(consatenatedLength-(consatenatedLength-maxLength),maxLength);}
   else {
     return consatenatedArrays;
   }
 
-  
 }
 
 console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
